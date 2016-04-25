@@ -112,3 +112,9 @@
   opacity: 0;
   display: none;
 }
+
+.portfolio-heading-spacer {
+    float: center;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
