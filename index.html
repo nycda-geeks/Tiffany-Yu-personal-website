@@ -63,13 +63,13 @@
                         <a href="#contact">Contact</a>
                     </li>
                     <li>
-                    	<a href ="http://twitter.com/imtiffanyyu"><i class="fa fa-twitter fa-fw"></i></a>
+                    	<a href ="http://twitter.com/imtiffanyyu" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
                     </li>
                     <li>
-                    	<a href ="http://github.com/imtiffanyyu"><i class="fa fa-github fa-fw"></i></a>
+                    	<a href ="http://github.com/imtiffanyyu" target="blank"><i class="fa fa-github fa-fw"></i></a>
                     </li>
                     <li>
-                    	<a href ="http://linkedin.com/in/tiffanyayu"><i class="fa fa-linkedin fa-fw"></i></a>
+                    	<a href ="http://linkedin.com/in/tiffanyayu" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
                     </li>
                 </ul>
             </div>
@@ -92,7 +92,7 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Hire Me</span></a>
+                                <a href="#contact" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-hand-right fa-fw"></i> <span class="network-name">Contact Me</span></a>
                             </li>
                         </ul>
                     </div>
@@ -108,7 +108,7 @@
     <!-- Page Content -->
 
 	<a name="about"></a>
-    <div class="content-section-a">
+    <div id="about" class="content-section-a">
 
         <div class="container">
             <div class="row">
@@ -590,7 +590,7 @@
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
-                        <li>
+                        <!-- <li>
                             <a href="https://twitter.com/imtiffanyyu" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
                         </li>
                         <li>
@@ -598,9 +598,32 @@
                         </li>
                         <li>
                             <a href="http://linkedin.com/in/tiffanyayu" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name"></span></a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a href="mailto:tiffanyayu@gmail.com?subject=Message from your website" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-envelope fa-fw"></i> <span class="network-name"></span></a>
+                            
+                            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope fa-fw"></i> <span class="network-name" >tiffanyayu@gmail.com</span></button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div> -->
+      <div class="modal-body">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <iframe src="https://docs.google.com/forms/d/1QjQvf1ogQWosljLPy554Lv6gonF2qIHgEQEyZm6PsKE/viewform?embedded=true" width=100% height=100% frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
                         </li>
                     </ul>
                 </div>
@@ -633,6 +656,19 @@
                         <li>
                             <a href="#contact">Contact</a>
                         </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                    	<a href ="http://twitter.com/imtiffanyyu" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+                    	</li>
+                    	<!-- <li class="footer-menu-divider">&sdot;</li> -->
+                    	<li>
+                    	<a href ="http://github.com/imtiffanyyu" target="blank"><i class="fa fa-github fa-fw"></i></a>
+                    	</li>
+                    	<!-- <li class="footer-menu-divider">&sdot;</li> -->
+                    	<li>
+                    	<a href ="http://linkedin.com/in/tiffanyayu" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
+                   		</li>
+
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; Tiffany Yu 2016. All Rights Reserved</p>
                 </div>
@@ -644,6 +680,16 @@
 
     <!-- jQuery -->
     <script src="includes/js/jquery.js"></script>
+    <!-- testing jQuery -->
+    <script>
+    	$ (document) .ready (function () {
+    		$('#myModal').on('show.bs.modal', function () {
+		    $('.modal .modal-body').css('overflow-y', 'auto'); 
+		    $('.modal .modal-body').css('height', $(window).height() * 0.8);
+			});
+    	})
+    </script>
+    <!-- end jQuery test -->
 
     <!-- Bootstrap Core JavaScript -->
     <script src="includes/js/bootstrap.min.js"></script>
